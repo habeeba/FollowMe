@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_student_login">StudentLogin</string>
+    <string name="title_activity_signup_user">SignupUser</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="title_activity_doctor_tim_line">DoctorTimLine</string>
+    <string name="title_activity_student_sign_up">StudentSignUp</string>
+    <string name="title_activity_about">StudentAboutActivity</string>
+    <string name="title_activity_staff_page">StaffPage</string>
+    <string name="title_activity_staff_home_page">StaffHomePage</string>
+    <string name="title_activity_about">StaffAboutActivity</string>
+    <string name="title_activity_searchable">Searchable</string>
+    <string name="title_activity_bookme">Bookme</string>
+    <string name="drawer_open"> Open navigation drawer </string>
+    <string name="drawer_close"> Close navigation drawer</string>
+    <string name="title_activity_inside_student_profile">InsideStudentProfileActivity</string>
+    <string name="title_activity_show_followers">ShowFollowersActivity</string>
+    <string name="title_activity_show_followings">ShowFollowingsActivity</string>
+    <string name="title_activity_student_profile">StudentProfileActivity</string>
+    <string name="search_title">SearchTitle</string>
+    <string name="app_name">Follow Me</string>
+    <string name="My_Agenda">Agenda </string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_create_agenda">CreateAgendaActivity</string>
+    <string name="title_activity_update_agenda">Update Agenda</string>
+    <string name="title_activity_show_exception">Exceptions</string>
+    <string name="title_activity_create_exceotion">Create Exceotion</string>
+    <string name="title_activity_choose_date">Choose Date</string>
+    <string name="title_activity_choose_exception_date">Choose Date</string>
+    <string name="title_activity_update_exception_agenda">Update Exception</string>
+    <string name="title_activity_show_agenda">ShowAgendaActivity</string>
+    <string name="title_activity_get_cources">GetCourcesActivity</string>
+    <string name="title_activity_add_locatin">AddLocatinActivity</string>
+    <string name="title_activity_checkin">CheckinActivity</string>
+    <string name="title_activity_set_staff_checkin">SetStaffCheckinActivity</string>
+    <string name="title_activity_get_staff_checkin">GetStaffCheckinActivity</string>
+    <string name="title_activity_fffffff">Fffffff</string>
+    <string name="title_activity_staff_profile">StaffProfileActivity</string>
+
+</resources>

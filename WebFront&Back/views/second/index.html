@@ -1,0 +1,401 @@
+<!--
+   Copyright (c) 2008 Journyx, Inc.
+
+   Permission is hereby granted, free of charge, to any person obtaining
+   a copy of this software and associated documentation files (the
+   "Software"), to deal in the Software without restriction, including
+   without limitation the rights to use, copy, modify, merge, publish,
+   distribute, sublicense, and/or sell copies of the Software, and to
+   permit persons to whom the Software is furnished to do so, subject to
+   the following conditions:
+  
+   The above copyright notice and this permission notice shall be
+   included in all copies or substantial portions of the Software.
+  
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+   NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+   LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+   OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+   WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  
+   The software may not be used to develop, enable or integrate with 
+   time, expense, or mileage tracking software of any kind,  except when
+   such software is provided by Journyx or its designated licensees.
+-->
+
+<html> 
+<head>
+	<title>jPint</title>
+
+	<meta name="viewport" content="user-scalable=no, width=device-width">
+
+	<link rel="stylesheet" type="text/css" charset="utf-8" href="css/jPint.css">
+	<link rel="stylesheet" type="text/css" charset="utf-8" href="css/scal.css">
+
+	<script type="text/javascript" language="javascript" src="js/prototype/prototype.js"></script>
+	<script type="text/javascript" language="javascript" src="js/jPint.js"></script>
+	<script type="text/javascript" language="javascript" src="js/scal/scal.js"></script>
+</head>
+
+<body id="jPint">
+<div class="jPintPageSet">
+
+	<div id="mainMenuPage" class="jPintPage IconMenu">
+		<ul>
+			<li><a href="#calendarPage"><img src="images/NavButtonCalendar.png" title="Calendar"></a></li>
+			<li><a href="#musicPage"><img src="images/NavButtonMusic.png" title="Music"></a></li>
+			<li><a href="#notesPage"><img src="images/NavButtonNotes.png" title="Notes"></a></li>
+			<li><a href="#creditsPage"><img src="images/NavButtonCredits.png" title="Credits"></a></li>
+		</ul>
+	</div>
+
+	<div id="calendarPage" class="jPintPage Calendar HasTitle">
+		<h1>
+			<a class="BackButton">Back</a>
+		</h1>
+		<div id="page1Calendar" class="iPhoneCal">
+		</div>
+		<div id="showDate">
+		</div>
+	</div>
+
+	<div id="musicPage" class="jPintPage EdgedList HasTitle">
+	
+		<h1>
+			Artists
+			<a class="BackButton">Back</a>
+		</h1>
+
+		<ul>
+			<li class="withArrow"><a href="#artistPage">Artist 1</a></li>
+			<li class="withArrow"><a href="#artistPage">Artist 2</a></li>
+			<li class="withArrow"><a href="#artistPage">Artist 3</a></li>
+			<li class="withArrow"><a href="#artistPage">Artist 4</a></li>
+			<li class="withArrow"><a href="#artistPage">Artist 5</a></li>
+		</ul>
+
+	</div>
+		
+	<div id="artistPage" class="jPintPage EdgedList HasTitle">
+	
+		<h1>
+			Albums
+			<a class="BackButton">Back</a>
+		</h1>
+
+		<ul>
+			<li class="withArrow"><a href="#albumPage">Album 1</a></li>
+			<li class="withArrow"><a href="#albumPage">Album 2</a></li>
+			<li class="withArrow"><a href="#albumPage">Album 3</a></li>
+			<li class="withArrow"><a href="#albumPage">Album 4</a></li>
+			<li class="withArrow"><a href="#albumPage">Album 5</a></li>
+		</ul>
+
+	</div>
+		
+	<div id="albumPage" class="jPintPage EdgedList HasTitle">
+	
+		<h1>The Album
+			<a class="BackButton">Back</a>
+		</h1>
+		<ul>
+			<li>Song 1</li>
+			<li>Song 2</li>
+			<li>Song 3</li>
+			<li>Song 4</li>
+			<li>Song 5</li>
+		</ul>
+
+	</div>
+		
+	<div id="creditsPage" class="jPintPage RoundedList HasTitle">
+	
+		<h1>
+			Credits
+			<a class="BackButton">Back</a>
+		</h1>
+
+		<h2>Journyx Developers</h2>
+		<ul>
+			<li>Andrew Reutter</li>
+			<li>Andrew Trent</li>
+			<li>Matt East</li>
+		</ul>
+
+		<h2>Thanks to</h2>
+		<ul>
+			<li class="withArrow"><a href="http://www.prototypejs.org" target="_new">prototype.js<span class="secondary">js framework</span></a></li>
+			<li class="withArrow"><a href="http://joehewitt.com/files/iphone/navigation.html" target="_new">Joe Hewitt<span class="secondary">iPod nav</span></a></li>
+			<li class="withArrow"><a href="http://scal.fieldguidetoprogrammers.com" target="_new">scal<span class="secondary">js calendar</span></a></li>
+			<li class="withArrow"><a href="http://www.alistapart.com/articles/slidingdoors/" target="_new">A List Apart<span class="secondary">sliding doors</span></a></li>
+			<li class="withArrow"><a href="http://www.iconspedia.com/pack/iphone/" target="_new">iconspedia.com<span class="secondary">icons</span></a></li>
+			<li class="withArrow"><a href="http://www.iconarchive.com/category/business/dragon-soft-icons-by-artua.html" target="_new">iconarchive.com<span class="secondary">icons</span></a></li>
+		</ul>
+
+	</div>
+		
+	<!--The WebNotes sample seen here was written by Matt East 29 Jan. 2008 -->
+
+	<div id="notesPage" class="jPintPage HasTitle EdgedList EditModeOff Notes">
+		<!-- Home Level Begin -->    
+		<h1>Notes
+			<div class="EditModeInvisible">
+				<a class="BackButton">Back</a>
+				<a href="#" onclick="jPintEdit.toggleDeleteMode( this, Element.DOMremove ).toggleSortMode( this );return false;" class="RightButton">Edit</a>
+			</div>
+			<div class="EditModeVisible">
+				<a class="LeftButton SymbolButton" href="#enter">+</a>
+				<a href="#" onclick="jPintEdit.toggleDeleteMode( this, Element.DOMremove ).toggleSortMode( this );return false;" class="RightButton ActiveButton">Done</a>
+			</div>
+			</h1>
+			<ul class="DeletableItems SortableItems">
+				<li class="withArrow"><a href="#ToDolist">ToDo list</a></li>
+				<li class="withArrow"><a href="#Gamestobuy">Games to buy</a></li>
+				<li class="withArrow"><a href="#Grocerylist">Grocery list</a></li>
+				<li class="withArrow"><a href="#Stockstowatch">Stocks to watch</a></li>
+				<li class="withArrow"><a href="#Giftstobuy">Gifts to buy</a></li>
+				<li class="withArrow"><a href="#Moviestorent">Movies to rent</a></li>
+				<li class="withArrow"><a href="#Moviestobuy">Movies to buy</a></li>
+				<li class="withArrow"><a href="#Moviestosee">Movies to see</a></li>
+				<li class="withArrow"><a href="#Gamestorent">Games to rent</a></li>
+				<li class="withArrow"><a href="#Prosandcons">Pros and cons</a></li>
+			</ul>
+		<!-- Home Level End --> 
+	</div>
+
+	<div id="enter" class="jPintPage HasTitle EdgedList Notes">
+		<!-- Enter WebNotes Page Begin -->
+			<h1>Enter
+			<a class="BackButton">Cancel</a>
+			<a class="RightButton ">Save</a>
+			</h1>
+			<ul>
+				<textarea name="wnBody" cols="45" rows="30"></textarea>
+			</ul>
+		<!-- Enter WebNotes Page End -->
+	</div>
+
+	<div id="ToDolist" class="jPintPage EdgedList HasTitle Notes">
+		<!-- Edit Page Begin -->
+			<ul>
+				<h1>Edit
+				<a class="BackButton">Cancel</a>
+				<a class="RightButton">Save</a>
+				</h1>
+				<textarea name="wnBodyEdit" cols="45" rows="30">ToDo list
+					
+1. Prototype look and feel (done)
+2. Create DB (done)
+3. Work on getting python to talk to MySQL DB (done)
+4. Prototype accessing data from DB with python (done)
+5. Prototype inserting data into DB with python (working)
+6. Modify mockup code to allow display of data from DB (not there yet)
+7. Modify mockup code to allow input of data to DB from browser (not there yet)
+8. Clean up any lose ends (not there yet)
+9. Pat my self on the back and keep working
+10. See plans for webnotes2
+
+See about starting to build other webapps I have plans for as they are very similar to this one.
+					</textarea><br>
+			</ul>
+		<!-- Edit Page End -->	
+	</div>
+
+	<div id="Gamestobuy" class="jPintPage EdgedList HasTitle Notes">
+		<!-- Edit Page Begin -->
+			<ul>
+				<h1>Edit
+				<a class="BackButton">Cancel</a>
+				<a class="RightButton">Save</a>
+				</h1>
+				<textarea name="wnBodyEdit" cols="45" rows="30">Games to buy
+					
+Matt
+Jam Sessions (DS)
+Blazing Angles (Wii)
+Endless Ocean (Wii)
+Super Smash Bros Melee (Wii)
+Daffy Duck: Duck Amuck (DS)
+
+Caleb
+Spiderman3 DS (29.92)
+
+
+Nathan for his SP
+Sonic the hedgehog (19.82)
+Over the hedge hammy goes nuts (19.82)
+Mario kart super circut (19.82)
+Spiderman3 (29.92)
+
+Kayleigh
+Spyro shadow legacy DS (29.94)
+
+					</textarea><br>
+			</ul>
+		<!-- Edit Page End -->	
+	</div>
+	
+		<div id="Grocerylist" class="jPintPage EdgedList HasTitle Notes">
+		<!-- Edit Page Begin -->
+			<ul>
+				<h1>Edit
+				<a class="BackButton">Cancel</a>
+				<a class="RightButton">Save</a>
+				</h1>
+				<textarea name="wnBodyEdit" cols="45" rows="30">Grocery list
+					
+Milk
+Wheat bread
+Microwave
+Light weiners
+Execedrine
+Chips
+					</textarea><br>
+			</ul>
+		<!-- Edit Page End -->	
+	</div>
+	
+	<div id="Stockstowatch" class="jPintPage EdgedList HasTitle Notes">
+		<!-- Edit Page Begin -->
+			<ul>
+				<h1>Edit
+				<a class="BackButton">Cancel</a>
+				<a class="RightButton">Save</a>
+				</h1>
+				<textarea name="wnBodyEdit" cols="45" rows="30">Stocks to watch
+					
+Apple
+Google
+Yahoo
+AT&T
+					</textarea><br>
+			</ul>
+		<!-- Edit Page End -->	
+	</div>
+
+	<div id="Giftstobuy" class="jPintPage EdgedList HasTitle Notes">
+		<!-- Edit Page Begin -->
+			<ul>
+				<h1>Edit
+				<a class="BackButton">Cancel</a>
+				<a class="RightButton">Save</a>
+				</h1>
+				<textarea name="wnBodyEdit" cols="45" rows="30">Gifts to buy
+					
+80 Gig iPod for Michelle
+17' MacBook Pro ME 
+Nintendo Wii for Mom and Dad
+Blank DVD's for Bob
+DVDR for Mike
+
+					</textarea><br>
+			</ul>
+		<!-- Edit Page End -->	
+	</div>
+
+	<div id="Moviestorent" class="jPintPage EdgedList HasTitle Notes">
+		<!-- Edit Page Begin -->
+			<ul>
+				<h1>Edit
+				<a class="BackButton">Cancel</a>
+				<a class="RightButton">Save</a>
+				</h1>
+				<textarea name="wnBodyEdit" cols="45" rows="30">Movies to rent
+					
+Mystery Men
+Monty Python 
+Godzilla Vs. Gigan
+Godzilla Vs. King Kong
+
+
+					</textarea><br>
+			</ul>
+		<!-- Edit Page End -->	
+	</div>
+	
+		<div id="Moviestobuy" class="jPintPage EdgedList HasTitle Notes">
+		<!-- Edit Page Begin -->
+			<ul>
+				<h1>Edit
+				<a class="BackButton">Cancel</a>
+				<a class="RightButton">Save</a>
+				</h1>
+				<textarea name="wnBodyEdit" cols="45" rows="30">Movies to buy
+					
+Herbie Goes Bannans
+Monty Python Holy Grail
+Godzilla Vs. King Gihdorah
+Godzilla Vs. Hedora
+
+
+					</textarea><br>
+			</ul>
+		<!-- Edit Page End -->	
+	</div>
+	
+			<div id="Moviestosee" class="jPintPage EdgedList HasTitle Notes">
+		<!-- Edit Page Begin -->
+			<ul>
+				<h1>Edit
+				<a class="BackButton">Cancel</a>
+				<a class="RightButton">Save</a>
+				</h1>
+				<textarea name="wnBodyEdit" cols="45" rows="30">Movies to see
+					
+Cloverfield
+3:10 to Yuma
+Any Gamera Movies I can find
+Rush Hour 3
+					</textarea><br>
+			</ul>
+		<!-- Edit Page End -->	
+	</div>
+
+<div id="Gamestorent" class="jPintPage EdgedList HasTitle Notes">
+		<!-- Edit Page Begin -->
+			<ul>
+				<h1>Edit
+				<a class="BackButton">Cancel</a>
+				<a class="RightButton">Save</a>
+				</h1>
+				<textarea name="wnBodyEdit" cols="45" rows="30">Games to rent
+					
+Blazing Angles
+Endless Oceans
+
+					</textarea><br>
+			</ul>
+		<!-- Edit Page End -->	
+	</div>
+	
+	<div id="Prosandcons" class="jPintPage EdgedList HasTitle Notes">
+		<!-- Edit Page Begin -->
+			<ul>
+				<h1>Edit
+				<a class="BackButton">Cancel</a>
+				<a class="RightButton">Save</a>
+				</h1>
+				<textarea name="wnBodyEdit" cols="45" rows="30">Pros and cons
+					
+Pros:
+Portable
+OSX
+Built in cam
+Python builtin
+Garage Band and other iLife software included
+
+
+Cons:
+Cost
+
+					</textarea><br>
+			</ul>
+		<!-- Edit Page End -->	
+	</div>
+
+</div>
+</body>
+
+</html>

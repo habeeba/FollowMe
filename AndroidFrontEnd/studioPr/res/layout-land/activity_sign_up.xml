@@ -1,0 +1,122 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.findme.Activities.SignUpActivity" 
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bk"
+        android:fillViewport="true">
+
+<AbsoluteLayout 
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk"
+    tools:context="com.example.trysearch.SignUpActivity" >
+
+    <EditText
+        android:id="@+id/nameID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="120dp"
+        android:layout_y="116dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+   
+       <Button
+        android:id="@+id/SIGNUP2"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+           android:layout_x="240dp"
+           android:layout_y="400dp"
+           android:background="#94b8e0"
+        android:text="Sign Up"
+        android:textColor="#0d4481"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/signUpPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="240dp"
+        android:layout_y="35dp"
+        android:text="Sign Up"
+        android:textColor="#0f4d92"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/passwordsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="120dp"
+        android:layout_y="175dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="189dp"
+        android:textColor="#0f4d92"
+        android:textSize="23dp"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/EmailFormalsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="120dp"
+        android:layout_y="235dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/passwordsignup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="125dp"
+        android:layout_y="305dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textvv"
+        android:layout_width="133dp"
+        android:layout_height="46dp"
+        android:layout_x="10dp"
+        android:layout_y="132dp"
+        android:text="FullName"
+        android:textColor="#0f4d92"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="245dp"
+        android:text="Formal      Email"
+        android:textColor="#0f4d92"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="324dp"
+        android:text="Password"
+        android:textColor="#0f4d92"
+        android:textSize="23dp" />
+
+</AbsoluteLayout>
+    </HorizontalScrollView>
+</ScrollView>

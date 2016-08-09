@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.findme.application"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.findme.application.Controllers.Application"
+        android:allowBackup="true"
+        android:icon="@drawable/luncher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+  >
+        <activity
+            android:name="com.findme.application.Activities.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.SignUpActivity"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.StudentLogin"
+            android:label="@string/title_activity_student_login" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.SignupUser"
+            android:label="@string/title_activity_signup_user" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.HomePage"
+            android:label="@string/title_activity_home_page" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.DoctorTimLine"
+            android:label="@string/title_activity_doctor_tim_line" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.StudentSignUp"
+            android:label="@string/title_activity_student_sign_up" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.StudentAboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.StaffPage"
+            android:label="@string/title_activity_staff_page" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.StaffHomePage"
+            android:label="@string/title_activity_staff_home_page" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.StaffAboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.Searchable"
+            android:label="@string/title_activity_searchable" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.Bookme"
+            android:label="@string/title_activity_bookme" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.ShowFollowersActivity"
+            android:label="@string/title_activity_show_followers" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.ShowFollowingsActivity"
+            android:label="@string/title_activity_show_followings" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.StudentProfileActivity"
+            android:label="@string/title_activity_student_profile"
+            android:parentActivityName="com.findme.application.Activities.HomePage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.findme.application.Activities.HomePage" />
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.ShowMyagendaActivity"
+            android:label="@string/My_Agenda" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.UpdateAgendaActivity"
+            android:label="@string/title_activity_update_agenda" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.ChooseDateActivity"
+            android:label="@string/title_activity_choose_date" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.ChooseExceptionDateActivity"
+            android:label="@string/title_activity_choose_exception_date" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.CreateAgendaActivity"
+            android:label="@string/title_activity_create_agenda" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.CreateExceotionActivity"
+            android:label="@string/title_activity_create_exceotion" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.ShowExceptionActivity"
+            android:label="@string/title_activity_show_exception" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.UpdateExceptionAgenda"
+            android:label="@string/title_activity_update_exception_agenda" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.GetCourcesActivity"
+            android:label="@string/title_activity_get_cources" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.AddLocatinActivity"
+            android:label="@string/title_activity_add_locatin" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.ChechinActivity"
+            android:label="@string/title_activity_checkin" >
+        </activity>
+        <activity
+            android:name="com.findme.application.SetStaffCheckinActivity"
+            android:label="@string/title_activity_set_staff_checkin" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.StudentProfileActivity"
+            android:label="@string/title_activity_student_profile" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.GetStaffCheckinActivity"
+            android:label="@string/title_activity_get_staff_checkin" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Fffffff"
+            android:label="@string/title_activity_fffffff" >
+        </activity>
+        <activity
+            android:name="com.findme.application.Activities.StaffProfileActivity"
+            android:label="@string/title_activity_staff_profile" >
+        </activity>
+    </application>
+
+</manifest>

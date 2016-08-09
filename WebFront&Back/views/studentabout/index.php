@@ -1,0 +1,66 @@
+<html>
+<head>
+    <meta name = "viewport" content = "user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <style type="text/css">
+        html {
+            -webkit-text-size-adjust: none; /* Never autoresize text */
+            word-wrap:break-word; /* break the word in an another line if it's too long */
+            background-color: #d2ddec;
+        }
+    </style>
+     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<div style="font-family:Helvetica; font-size:14px; line-height:18px; margin: 20px auto;">
+        <div style="padding-left:15px; padding-right:15px;">
+
+            <p>Many orgaizations face problem in the communication between the organization's staff these problems may cost a waste in time, resources or even more. our app is focused on such problem in university where the communication between student and university staff  is an essential way of learning
+                so if the student want to book a meeting with doctor or TA or the doctor want to spread a message - lecture is cancelled for example- all of these communications and much more will be held by our app
+                This application is a web/ android app which is based on the cloud
+			</p>
+            
+            <p style="margin-bottom:3px;"><strong>Key Functionality</strong></p>
+            
+            <ul style="padding-left:16px;margin-top:0px;">
+                <li>Get updated if any staff member has an announcement  </li>
+                <li>make a book with Staff members to get appointment </li>
+            </ul>
+            
+            <p style="margin-bottom:3px;"><strong>Instructions</strong></p>
+            <ul style="padding-left:16px;margin-top:0px;">
+                <li>Search for Staff you want to know information about </li>
+                <li>enter Staff's home page if you want to book or follow him </li>
+                <li>Use the follow butoon in Staff's homepage if you want to get notifications from him</li>
+                <li>Use book button Staff's homepage to book with him</li>
+                <li>Use the menu to navigate between pages</li>
+
+
+
+            </ul>
+
+
+            <p style="margin-bottom:3px;"><strong>Team Members</strong></p>
+            <ul style="padding-left:16px;margin-top:0px;">
+                <li>Habeeba Baioumy Ahmed </li>
+                <li>Aliaa Ali </li>
+                <li>Amal Khaled </li>
+                <li>Nourhan Mohammed Abdo </li>
+                <li>Mohammed Ali </li>
+            </ul><br/><br/>
+			<br>
+<form action="index.php?r=studenthome" method="post">
+		<input type="hidden" name="_csrf" value="<?=Yii::$app->request->getCsrfToken()?>" /> <br>
+		<button style="margin-left: 120px;" class="mybutton1"  type="submit">Back</button>
+</form>
+<br>
+            <p>&copy; 2016 Faculty Of Computers and Information - Cairo University. All Rights Reserved to The project team members.</p>
+
+        </div>
+	</div>
+</body>
+</html>	

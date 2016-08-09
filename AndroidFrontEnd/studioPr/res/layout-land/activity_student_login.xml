@@ -1,0 +1,123 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.findme.Activities.SignUpActivity" 
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bk"
+        android:fillViewport="true">
+
+
+<AbsoluteLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bk"
+    
+    tools:context=".StudentLogin" >
+
+    <TextView
+        android:id="@+id/LoginPage"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="236dp"
+        android:layout_y="17dp"
+        android:text="Login"
+        android:textColor="#0f4d92"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_x="11dp"
+        android:layout_y="227dp"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/IdEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="146dp"
+        android:layout_y="86dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textvv"
+       android:layout_width="102dp"
+        android:layout_height="46dp"
+        android:layout_x="10dp"
+        android:layout_y="100dp"
+        android:textColor="#0f4d92"
+        android:textSize="25dp"
+        android:text="ID" />
+
+    <EditText
+        android:id="@+id/passwordsignup"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="146dp"
+        android:layout_y="145dp"
+        android:ems="10"
+        android:inputType="textPassword" >
+
+         />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="158dp"
+        android:textColor="#0f4d92"
+        android:textSize="25dp"
+        android:text="Password" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="233dp"
+        android:layout_y="280dp"
+        android:text="New here?"
+        android:textStyle="bold"
+        android:textColor="#0f4d92"
+        android:textSize="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <TextView
+        android:id="@+id/signupStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="210dp"
+        android:layout_y="310dp"
+        android:text="Create an account"
+        android:clickable="true"
+        android:textColor="#0d4481"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/LOGIN2"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_x="210dp"
+        android:layout_y="220dp"
+        android:background="#94b8e0"
+        android:text="Login"
+        android:textColor="#0d4481"
+        android:textSize="30dp" />
+
+</AbsoluteLayout>
+</HorizontalScrollView>
+</ScrollView>

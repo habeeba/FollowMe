@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@layout/divider"
+    android:layout_marginLeft="20dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+         
+            android:id="@+id/drName"
+            android:text="dr name"
+             android:textSize="18sp"
+             android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#0F4D92"
+            />
+        
+        
+        <TextView
+            android:id="@+id/checkedin"
+            android:text="lab1"
+            android:layout_below="@+id/drName"
+           
+             android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="18sp"/>
+            />
+
+        <TextView
+            
+              android:id="@+id/txtTimee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_marginLeft="40dp"
+            android:layout_below="@+id/checkedin"
+            android:text="12:30 pm"
+            android:textColor ="#708090"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txtpost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="18sp"/>
+
+</LinearLayout>
